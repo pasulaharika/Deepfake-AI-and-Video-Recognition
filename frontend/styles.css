@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(135deg, #fce7f3 0%, #e0e7ff 50%, #cffafe 100%);
+  color: #1b264d;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.card {
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+#status {
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 4px 40px rgba(5, 50, 120, 0.08);
+}
+
+#output {
+  min-height: 220px;
+  border-radius: 12px;
+  border: 1px solid #dbe5ff;
+  background: #f8faff;
+  color: #0f1e3f;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  border-radius: 8px;
+  border: 1px solid #4099ff;
+  background: #eff7ff;
+  color: #1a4d8f;
+  font-weight: 600;
+}
+
+.btn {
+  font-weight: 600;
+}
